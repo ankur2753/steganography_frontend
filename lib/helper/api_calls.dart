@@ -19,7 +19,7 @@ class SteganographyAPI {
   Future<File> encryptFile(File coverImage, List<File> secretImages) async {
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('https://ee82-110-235-230-41.ngrok-free.app/encrypt'),
+      Uri.parse('https://dbff-119-82-85-116.ngrok-free.app/encrypt'),
     );
     request.files.add(http.MultipartFile(
       'cover_image',
@@ -49,7 +49,7 @@ class SteganographyAPI {
     File secretImage2,
     File secretImage3,
   ) async {
-    final url = 'https://ee82-110-235-230-41.ngrok-free.app/encrypt';
+    final url = 'https://dbff-119-82-85-116.ngrok-free.app/encrypt';
     final request = http.MultipartRequest('POST', Uri.parse(url));
     request.files.addAll([
       http.MultipartFile.fromBytes(
@@ -85,7 +85,7 @@ class SteganographyAPI {
   Future<List<File>> decryptImage(File hiddenImage) async {
     var request = http.MultipartRequest(
       'POST',
-      Uri.parse('https://ee82-110-235-230-41.ngrok-free.app/decrypt'),
+      Uri.parse('https://dbff-119-82-85-116.ngrok-free.app/decrypt'),
     );
     request.files.add(http.MultipartFile(
       'hidden_image',

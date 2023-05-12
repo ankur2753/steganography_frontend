@@ -6,7 +6,7 @@ import 'package:steganography_frontend/components/side_drawer.dart';
 import 'package:steganography_frontend/helper/api_calls.dart';
 import 'package:steganography_frontend/screens/decrypt_response.dart';
 
-String apilink = "https://ee82-110-235-230-41.ngrok-free.app";
+String apilink = "https://dbff-119-82-85-116.ngrok-free.app";
 
 class DecryptScreen extends StatefulWidget {
   const DecryptScreen({super.key});

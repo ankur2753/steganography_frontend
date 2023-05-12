@@ -50,9 +50,9 @@ class InputImagesState extends State<InputImages> {
       return GestureDetector(
         onTap: _pickImage,
         child: Container(
-          color: Colors.grey[200],
+          color: Colors.transparent,
           child: Icon(
-            Icons.add,
+            Icons.add_a_photo,
             color: Colors.grey[400],
             size: 48,
           ),
@@ -85,8 +85,8 @@ class InputImagesState extends State<InputImages> {
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 500,
               crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-              mainAxisExtent: 600,
+              mainAxisSpacing: 3,
+              mainAxisExtent: 500,
             ),
             itemCount: 4,
             itemBuilder: (BuildContext context, int index) {

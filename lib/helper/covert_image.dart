@@ -15,7 +15,7 @@ class TransFormImages {
     final compressedImage =
         img.copyResize(image!, width: targetWidth, height: targetHeight);
     final compressedFile = File('${file.path.split('.').first}_compressed.jpg')
-      ..writeAsBytesSync(img.encodeJpg(compressedImage, quality: 90));
+      ..writeAsBytesSync(img.encodeJpg(compressedImage, quality: 100));
     return compressedFile;
   }
 }

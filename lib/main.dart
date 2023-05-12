@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:steganography_frontend/screens/encrypt_response.dart';
 import 'package:steganography_frontend/screens/home.dart';
 import 'package:steganography_frontend/screens/input_images.dart';
 import 'screens/decrypt_images.dart';
@@ -15,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (_) => const HomeScreen(),
@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/decrypt': (_) => const DecryptScreen(),
         '/about': (_) => const AboutUsPage(),
       },
+      theme: ThemeData.light(useMaterial3: true),
     );
   }
 }
